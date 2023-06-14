@@ -7,12 +7,8 @@ display: flex;
 align-items: center;
 flex-direction: column;
 margin-top:100px;
+padding:20px
 
-
-@media (max-width: 890px) {
-padding:30px;
-
-}
 `
 
 export const Title =  styled.div`
@@ -34,6 +30,7 @@ p{
     color:#FFF;
     font-family: 'Play', sans-serif;
     font-size:15px;
+    padding:10px;
 }
 `
 
@@ -53,6 +50,12 @@ export const Box = styled.div`
     height: 400px;
   }
 
+  @media (max-width: 415px) {
+    width: 250px;
+    height: 450px;
+  
+    
+}
 
 img{
     flex: 1;
@@ -65,8 +68,12 @@ img{
     @media (max-width: 890px) {
         width: 100%; /* Ajusta a largura para ocupar 100% do container */
         height: auto;
-      }
+
+    }
+
+   
 }
+
     
 `
 
@@ -74,7 +81,8 @@ export const Text = styled.div`
   text-align: center;
   padding:30px;
   height: 100%;
-  
+  overflow: auto;
+
 h2{
     font-size:25px;
     font-family: 'Play', sans-serif;

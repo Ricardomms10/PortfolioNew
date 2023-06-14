@@ -43,7 +43,7 @@ div {
   }
 
   @media (max-width: 375px) {
-    margin-bottom:-15px;
+    
   }
 `;
 
