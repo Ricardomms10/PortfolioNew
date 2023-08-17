@@ -83,7 +83,7 @@ display:flex;
  align-items: center;
 
  @media (max-width: 768px){
-  flex-direction:column-reverse;
+   flex-direction:column-reverse;
     align-items: flex-start;
  }
 `
