@@ -29,9 +29,9 @@ const Head = () => {
       {isMenuOpen && (
 
         <OverlayMenu>
-          <MenuLink href="/">  <p>QUEM SOU</p></MenuLink>
+          <MenuLink href="/">  <p>HOME</p></MenuLink>
           <MenuLink href="/Projeto">  <p>PROJETOS</p></MenuLink>
-          <MenuLink href="/Contato"> <p>CONTATO</p></MenuLink>
+         
         </OverlayMenu>
       )}
 

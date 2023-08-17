@@ -21,7 +21,7 @@ export const MenuContainer = styled.ul`
     gap:30px;
     margin-right: 10px;
 
-    @media (max-width: 890px) {
+    @media (max-width: 768px) {
       display: none; /* Oculta o menu */
     }
   
@@ -49,7 +49,7 @@ export const HamburgerIcon = styled.head`
   display: none;
   cursor: pointer;
 
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     display: block;
     font-size: 25px;
     color: #000;
