@@ -3,45 +3,17 @@ import styled from "styled-components";
 export const HeadContainer  = styled.header`
    display:flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: end;
    padding: 10px;
    align-items: center;
-   background-color: #fff;
-   position: fixed;
+  
+ 
    top:0;
    width: 100%;
-
    @media (max-width: 890px) {
     
-   
   }
 `
-
-export const LogoContainer = styled.div`
-  display: flex;
-  margin-left: 15px;
-
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    color:#000;
-    border-radius: 100px;
-    padding: 10px;
-    margin: 3px;
-    width: 50px;
-    text-decoration: none;
-    &:hover{
-      color:#4B0082;
-    }  
-  }
-
-  @media (max-width: 890px) {
-    margin-bottom: 10px;
-  }
-`;
-
 
 export const MenuContainer = styled.ul`
     display: flex;
@@ -49,7 +21,7 @@ export const MenuContainer = styled.ul`
     gap:30px;
     margin-right: 10px;
 
-    @media (max-width: 890px) {
+    @media (max-width: 768px) {
       display: none; /* Oculta o menu */
     }
   
@@ -59,10 +31,15 @@ export const MenuContainer = styled.ul`
 export const TextMenu = styled.li`
    font-family: 'play', sans-serif;
    font-weight: bold;
-   font-size:25px;
+   font-size:30px;
    color:#000;
+   padding:10px 15px;
+   transition: 0.4s ease-out;
   &:hover{
-    color:#4B0082;
+  
+    color:#fff;
+  
+
   } 
 
 
@@ -72,7 +49,7 @@ export const HamburgerIcon = styled.head`
   display: none;
   cursor: pointer;
 
-  @media (max-width: 890px) {
+  @media (max-width: 768px) {
     display: block;
     font-size: 25px;
     color: #000;

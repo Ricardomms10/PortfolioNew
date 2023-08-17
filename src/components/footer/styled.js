@@ -2,48 +2,54 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-background-color:#fff;
+background: linear-gradient(to bottom, transparent 5%, #FFF 85%);
 display:flex;
 align-items: center;
-justify-content: space-between;
 bottom: 0;
-left: 0;
 width: 100%;
-padding:20px;
-
+height:300px;
+justify-content: center;
+flex-direction: column;
+gap:15px;
 `
 
-export const RedesBox = styled.div`
-display: flex;
-justify-content: space-evenly;
-gap:30px;
+export const Div1 = styled.div`
+justify-content: center;
+display:flex;
+align-items: center;
+flex-direction: column;
+font-size: 15px;
+gap:10px;
+font-family: 'play', sans-serif;
+margin-top: 60px;
+`
+
+export const Div2 = styled.div`
+justify-content: center;
+display:flex;
+align-items: center;
+flex-direction: column;
+font-size: 13px;
+font-family: 'play', sans-serif;
+
+h3{
+background-color: ${props => (props.copiado ? '#53d475' : '#f5f1e9')};
+border:solid #000 1px;
+padding:10px 80px;
+animation:ease-in 2s;
 
 
-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
 
-    h2 {
-      font-size: 20px;
-      text-align: center;
-    }
+h2{
+  background: linear-gradient(to bottom,#f5f1e9 20%, #e3ceed 60%);
+  border:solid #000 1px;
+  padding:10px 80px;
 
-    p {
-      font-size: 15px;
-      text-align: center;
-    }
-  }
 
-  @media (max-width: 890px) {
-  
-    flex-direction: column;
-   
-  }
-
-  @media (max-width: 375px) {
-    
-  }
-`;
+  &:hover{
+  cursor: pointer;
+}
+}
+`
 
