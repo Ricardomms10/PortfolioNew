@@ -16,9 +16,7 @@ const Content = () => {
                 <span>OI, EU SOU RICARDO </span>
                 
                 <Divisao>
-
                     <h1>REACT</h1>
-
                     <React1>
                         <a href="https://www.linkedin.com/in/ricardo-malta-632b70164/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href={curriculo} download title="Baixar Currículo"><i class="fa-regular fa-newspaper"></i></a>

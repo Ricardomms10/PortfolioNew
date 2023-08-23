@@ -36,7 +36,7 @@ p{
 
 export const Box = styled.div`
   display:flex;
-  gap:20px;
+  gap:70px;
   margin:20px 0px 20px 0px;
   box-sizing: border-box;
   width: 850px;
