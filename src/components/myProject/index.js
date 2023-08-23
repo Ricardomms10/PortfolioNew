@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import Pokemon from "../image/novo.png"
 import { Box, Container, Text, Title } from "./styled"
+import Cilios from "../image/pxcilios.png"
 
 export const MyProject = () => (
 
@@ -16,6 +17,14 @@ export const MyProject = () => (
                 <Text>
                     <p>POKEAPI</p>
                     <h1>UMA POKEDEX</h1>
+                </Text>
+            </div>
+
+            <div>
+                <a href="/" target="_blank"><img alt="Capa Site" src={Cilios} /></a>
+                <Text>
+                    <p>PROJETO CILIOS</p>
+                    <h1> AGENDAMENTO DE CLIENTES</h1>
                 </Text>
             </div>
         </Box>
