@@ -2,16 +2,26 @@ import styled from "styled-components";
 
 export const Home = styled.section`
   display: flex;
-  align-items: start;
-  justify-content: center;
+  flex-direction:column;
+  align-items: center;
   margin-top: 80px;
   padding: 20px;
   box-sizing: border-box;
   gap: 10px;
   height: 100vh;
+
+  h4{
+    margin-top:30px;
+    color:#c2c4d1;
+    font-family: 'Play', sans-serif;
+    font-size:15px;
+    letter-spacing:4px;
+
+  }
 `;
 
 export const Apresentacao = styled.div`
+
   h1 {
     justify-content: start;
     color: #fff;

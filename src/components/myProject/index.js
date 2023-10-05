@@ -1,34 +1,52 @@
-/* eslint-disable react/jsx-no-target-blank */
-import Pokemon from "../image/novo.png"
-import { Box, Container, Text, Title } from "./styled"
-import Cilios from "../image/pxcilios.png"
+import { CustomSwiper, CustomSwiperSlide, Box, Container, Title, Text } from "./styled"
+import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { data } from "./data";
 
-export const MyProject = () => (
+export const MyProject = () => {
 
-    <Container>
-        <Title>
-            <h1> Projetos </h1>
-            <p> Aqui estão alguns exemplos dos projetos que desenvolvi e estou trabalhando atualmente. <br /> Confira abaixo: </p>
-        </Title>
+    return (
+        <Container>
+            <Title>
+                <h1> Projetos </h1>
+                <p> Aqui estão alguns exemplos dos projetos que desenvolvi e estou trabalhando atualmente. <br /> Confira abaixo: </p>
+            </Title>
 
-        <Box>
-            <div>
-                <a href="https://github.com/Ricardomms10/Projeto-Pokedex" target="_blank"><img alt="Capa Site" src={Pokemon} /></a>
-                <Text>
-                    <p>POKEAPI</p>
-                    <h1>UMA POKEDEX</h1>
-                </Text>
-            </div>
+            <Box>
+                <CustomSwiper
+                    effect={'coverflow'}
+                    grabCursor={true}
+                    centeredSlides={true}
+                    slidesPerView={'auto'}
+                    coverflowEffect={{
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    }}
+                    pagination={true}
+                    modules={[EffectCoverflow, Pagination]}
+                    className="mySwiper"
+                >
+                    {data.map((item) => (
+                        <CustomSwiperSlide key={item.id}>
+                            <a href={item.link} target="_blank" rel="noopener noreferrer">
+                                <img src={item.image} alt="Slider" />
+                            </a>
+                            <Text key={item.id}>
+                                <h1>{item.nome}</h1>
 
-            <div>
-                <a href="/" target="_blank"><img alt="Capa Site" src={Cilios} /></a>
-                <Text>
-                    <p>PROJETO CILIOS</p>
-                    <h1> AGENDAMENTO DE CLIENTES</h1>
-                </Text>
-            </div>
-        </Box>
+                            </Text>
+                        </CustomSwiperSlide >
+                    ))}
 
-    </Container>
+                </CustomSwiper >
 
-)
+
+
+            </Box>
+
+        </Container>
+
+    )
+}

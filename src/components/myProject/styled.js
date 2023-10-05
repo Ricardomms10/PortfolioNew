@@ -1,75 +1,41 @@
 import styled from "styled-components";
-
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export const Container = styled.div`
-height: 100vh;
+wigth:100%;
 display: flex;
 align-items: center;
 flex-direction: column;
-margin-top:10px;
-padding:20px 20px 30px 20px;
-
+margin-top:10px auto;
 `
 
-export const Title =  styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-top:15px;
+export const CustomSwiper = styled(Swiper)`
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+`;
 
-h1{
-    color:#FFF;
-    font-size:35px;
-    font-family: 'Play', sans-serif;
-    font-weight: 700;
-}
+export const CustomSwiperSlide = styled(SwiperSlide)`
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 360px;
+`;
 
-p{
-    margin-top:10px;
-    color:#FFF;
-    font-family: 'Play', sans-serif;
-    font-size:15px;
-    padding:10px;
-}
-`
 
 export const Box = styled.div`
-  display:flex;
-  gap:70px;
-  margin:20px 0px 20px 0px;
-  box-sizing: border-box;
-  width: 850px;
-  height: 450px;
+  width: 100%;
+  object-fit: cover;
 
  
-  @media (max-width: 890px) {
-    flex-direction: column;
-    width: 350px;
-    height: 400px;
-  }
-
-  @media (max-width: 415px) {
-    width: 250px;
-    height: 450px;
-  
-    
-}
 
 img{
-    flex: 1;
-    height: 100%;
-    box-sizing: border-box;
-  
-    @media (max-width: 890px) {
-        width: 100%; /* Ajusta a largura para ocupar 100% do container */
-        height: auto;
-
-    }
-
- 
+  display: block;
+  max-width: 100%; /* Ajusta automaticamente a largura da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit:cover;
+  padding:10px;
 }
-
 
 `
 
@@ -96,4 +62,26 @@ h1{
 }
 
 
+`
+export const Title =  styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+margin-top:15px;
+
+h1{
+    color:#FFF;
+    font-size:35px;
+    font-family: 'Play', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    margin-top:10px;
+    color:#FFF;
+    font-family: 'Play', sans-serif;
+    font-size:15px;
+    padding:10px;
+}
 `
