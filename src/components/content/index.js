@@ -1,20 +1,16 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Apresentacao, Home, React1, Divisao  } from "./style";
-
-import curriculo from "../assets/curriculo.pdf"
+import { Apresentacao, Home, React1, Divisao } from "./style";
+import curriculo from "../assets/image/curriculo.pdf"
+import { Skill } from "../home/skill";
 
 const Content = () => {
-
-
 
     return (
         <Home>
             <Apresentacao>
 
-
                 <span>OI, EU SOU RICARDO </span>
-                
                 <Divisao>
                     <h1>REACT</h1>
                     <React1>
@@ -25,9 +21,10 @@ const Content = () => {
                 </Divisao>
 
                 <h1>DEVELOPER </h1>
-                <p> Tenho 29 anos e sou desenvolvedor front-end com 6 meses de experiência <br></br>trabalhando como freelancer.<br></br> Gosto de resolver problemas usando design e tecnologia. </p>
+                <p> Tenho 29 anos e sou desenvolvedor front-end com 8 meses de experiência <br></br>trabalhando como freelancer.<br></br> Gosto de resolver problemas usando design e tecnologia. </p>
             </Apresentacao>
-
+            <h4>MINHAS SKILLS</h4>
+            <Skill />
 
         </Home >
     )
