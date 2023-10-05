@@ -1,6 +1,6 @@
-import Pokemon from "../image/novo.png"
-import Cilios from "../image/pxcilios.png"
-import Sena from "../image/megasena.png"
+import Pokemon from "../assets/image/novo.png"
+import Cilios from "../assets/image/pxcilios.png"
+import Sena from "../assets/image/megasena.png"
 
 
 export const data = [

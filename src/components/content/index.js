@@ -11,7 +11,6 @@ const Content = () => {
             <Apresentacao>
 
                 <span>OI, EU SOU RICARDO </span>
-
                 <Divisao>
                     <h1>REACT</h1>
                     <React1>
