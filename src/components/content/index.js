@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Apresentacao, Home, React1, Divisao } from "./style";
-import curriculo from "../assets/image/curriculo.pdf"
+import curriculo from "../assets/image/curriculo05.pdf"
 import { Skill } from "../home/skill";
 
 const Content = () => {
@@ -23,7 +23,6 @@ const Content = () => {
                 <h1>DEVELOPER </h1>
                 <p> Tenho 29 anos e sou desenvolvedor front-end com 8 meses de experiência <br></br>trabalhando como freelancer.<br></br> Gosto de resolver problemas usando design e tecnologia. </p>
             </Apresentacao>
-            <h4>MINHAS SKILLS</h4>
             <Skill />
 
         </Home >

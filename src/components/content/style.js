@@ -49,11 +49,19 @@ export const Apresentacao = styled.div`
     flex-wrap: wrap;
   }
 
+  @media (max-width: 945px) {
+    h1 {
+      font-size: 60px;
+    }
+  }
+
 @media (max-width: 768px){
   h1{
     font-size: 40px; 
   }
 }
+
+
 
 `;
 
