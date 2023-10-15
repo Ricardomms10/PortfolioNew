@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Meu Portfólio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este README destina-se a exibir meus projetos e meu progresso na área, destacando minhas realizações e desenvolvimento contínuo.
 
-## Available Scripts
+## Índice 
 
-In the project directory, you can run:
+- <a href=""></a>
+
 
 ### `npm start`
 

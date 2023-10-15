@@ -63,7 +63,7 @@ h1{
 
 
 `
-export const Title =  styled.div`
+export const Title = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
@@ -85,3 +85,73 @@ p{
     padding:10px;
 }
 `
+export const ModalContainer = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; 
+
+`;
+
+export const ModalContent = styled.div`
+  background: white;
+  border:5px solid #000;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+  position: relative;
+
+  h1{
+    color:#000;
+    font-family: 'Play', sans-serif;
+    font-size:25px;
+  }
+
+  ul{
+        padding:15px;
+    li{
+      display:flex;
+      align-items: center;
+      justify-content: center; 
+      span{
+        padding:2px;
+        margin-right:4px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  
+  div{
+    span{
+      font-size: 18px;
+    }
+  }
+
+
+  img{
+    max-width: 50%; /* A imagem não irá ultrapassar a largura do seu container */
+     height: auto;     /* A altura se ajustará automaticamente */
+  }
+`;
+
+export const CloseButton = styled.button`
+  position: absolute;
+  padding:3px 6px;
+  color:#4a5059;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: 2px solid #4a5059 ;
+  border-radius:50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+`;
+

@@ -8,8 +8,8 @@ import { MyProject } from "../myProject/index";
 
 export const Projeto = () => (
     <>
-       <Head/>
-       <MyProject/>
-       <Footer/>
+        <Head />
+        <MyProject />
+        <Footer />
     </>
 )

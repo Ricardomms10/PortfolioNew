@@ -1,8 +1,8 @@
 
 import Js from '../assets/image/js.png'
-import Ts from '../assets/image/ts.png'
-import ReactIcon from '../assets/image/icons8-reagir-50.png'
-import Mysql from '../assets/image/my sql.png'
+import Ts from '../assets/image/type.png'
+import ReactIcon from '../assets/image/react.png'
+import Mysql from '../assets/image/mysql.png'
 import Npm from '../assets/image/npm.png'
 import Git from '../assets/image/git.png'
 import GitHub from '../assets/image/github.png'
@@ -10,7 +10,7 @@ import Css from '../assets/image/css.png'
 import Html from '../assets/image/html.png'
 import StyledIco from '../assets/image/styled compo.png'
 import Material from '../assets/image/material iu.png'
-import { CustomSwiper, CustomSwiperSlide } from './styled'
+import { Container, CustomSwiper, CustomSwiperSlide } from './styled'
 
 export const Skill = () => {
 
@@ -29,20 +29,21 @@ export const Skill = () => {
     ]
 
     return (
-
-        <CustomSwiper
-            slidesPerView={6}
-            pagination={{ clickable: true }}
-        >
-            {data.map((item) => (
-                <CustomSwiperSlide key={item.id}>
-                    <img
-                        src={item.image}
-                        alt='icone'
-                    />
-                </CustomSwiperSlide>
-            ))}
-        </CustomSwiper>
-
+        <Container>
+            <h4>MINHAS SKILLS</h4>
+            <CustomSwiper
+                slidesPerView={6}
+                pagination={{ clickable: true }}
+            >
+                {data.map((item) => (
+                    <CustomSwiperSlide key={item.id}>
+                        <img
+                            src={item.image}
+                            alt='icone'
+                        />
+                    </CustomSwiperSlide>
+                ))}
+            </CustomSwiper>
+        </Container>
     )
 }
