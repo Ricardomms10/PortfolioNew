@@ -21,7 +21,7 @@ const Content = () => {
                 </Divisao>
 
                 <h1>DEVELOPER </h1>
-                <p> Tenho 29 anos e sou desenvolvedor front-end com 8 meses de experiência <br></br>trabalhando como freelancer.<br></br> Gosto de resolver problemas usando design e tecnologia. </p>
+                <p> Sou desenvolvedor Full Stack com 10 meses de experiência <br></br>trabalhando como freelancer.<br></br> Gosto de resolver problemas usando design e tecnologia. </p>
             </Apresentacao>
             <Skill />
 
