@@ -16,8 +16,7 @@ export const Home = styled.section`
     font-family: 'Play', sans-serif;
     font-size:15px;
     letter-spacing:4px;
-
-  }
+}
 `;
 
 export const Apresentacao = styled.div`
@@ -44,7 +43,7 @@ export const Apresentacao = styled.div`
     justify-content: end;
     color: #fff;
     font-family: 'Play', sans-serif;
-    font-size: 11px; /* Reduzido o tamanho da fonte para dispositivos móveis */
+    font-size: 13px; 
     font-weight: 700;
     flex-wrap: wrap;
   }
@@ -60,12 +59,7 @@ export const Apresentacao = styled.div`
     font-size: 40px; 
   }
 }
-
-
-
 `;
-
-
 
 export const React1 = styled.div`
   display: flex;

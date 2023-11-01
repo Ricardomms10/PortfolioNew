@@ -18,8 +18,8 @@ export const CustomSwiper = styled(Swiper)`
 export const CustomSwiperSlide = styled(SwiperSlide)`
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 360px;
+  width: 350px;
+  height: 300px;
 `;
 
 
@@ -27,12 +27,10 @@ export const Box = styled.div`
   width: 100%;
   object-fit: cover;
 
- 
-
 img{
   display: block;
-  max-width: 100%; /* Ajusta automaticamente a largura da imagem */
-  height: auto; /* Mantém a proporção da imagem */
+  max-width: 100%; 
+  height: auto; 
   object-fit:cover;
   padding:10px;
 }
